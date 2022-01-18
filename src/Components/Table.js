@@ -6,20 +6,16 @@ export default class extends Component {
     super(props);
   }
 
+  // returns an array of row elements to be rendered
   createRows() {
     let rowsArray = [];
-
     for (let i = 0; i < this.props.rows; i++) {
       rowsArray.push(
-
-          <table>
-            <tbody>
-                <tr><TableColumn
-                  rows = {this.props.rows}
-                  columns = {this.props.columns}
-                /></tr>
-            </tbody>
-          </table>
+        <tr className="table-row"><TableColumn
+          rows = {this.props.rows}
+          columns = {this.props.columns}
+          selectedColor = {this.props.selectedColor}
+        /></tr>
       )
     }
     return rowsArray;
@@ -27,9 +23,12 @@ export default class extends Component {
          
   render() { 
     return (
-      <>
-        {this.createRows()}
-      </>
+      <table>
+        <tbody>
+          {/* RENDERS ROWS */}
+          {this.createRows()}
+          </tbody>
+        </table>
     )
   }
 }
