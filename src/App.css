@@ -1,6 +1,64 @@
+body {
+  background-color: salmon;
+}
+
+header {
+  font-size: 50px;
+  background-color: rgb(51, 50, 54);
+  color: white;
+  text-align: center;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
 .table-cell {
   border: solid black 1px;
-  width: 10px;
-  height: 10px;
+  width: 50px;
+  height: 50px;
   background-color: white;
+  border-radius: 5px;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 2px;
+  margin: 0px 15px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background-color: rgb(51, 50, 54);
+  color: beige;
+  font-weight: bold;
+  margin: 10px;
+  border: none;
+  height: 50px;
+  width: 200px;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.color-selector {
+  padding: 3.5px;
+  border-radius: 4px;
+  margin-left: 5px;
+  background-color: rgb(51, 50, 54);
+  color: white;
+  font-size: 20px;
+  height: 42px;
+  width: 200px;
+}
+
+label {
+  font-weight: bold;
+  margin-left: 10px;
 }
